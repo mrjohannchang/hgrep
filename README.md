@@ -1,7 +1,9 @@
 # hgrep
 
-The default outputs of grep isn't good enough for human, hgrep prints more friendly results.
-The goal of hgrep is similar to [ack](http://beyondgrep.com/) but hgrep is much more compact and easier to extend.
+The default outputs of grep isn't good enough for human.
+hgrep prints more friendly results.
+The goal of hgrep is similar to [ack](http://beyondgrep.com/)
+but hgrep is much more compact and easier to extend.
 
 hgrep accepts the same arguments with traditional grep.
 
@@ -49,3 +51,18 @@ srcgrep 'iddqd'
 * pygrep
 * rbgrep
 * xmlgrep
+
+## Installation
+
+Clone the repository and enter it then execute the installing file to install
+to `${HOME}/bin`
+
+```sh
+./install
+```
+
+Or by yourself
+
+```sh
+cp -P *grep DESTINATION
+```
