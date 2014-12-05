@@ -26,7 +26,7 @@ hgrep 'hello'
 
 E.g.
 ```sh
-javagrep 'main(.*)'
+javagrep -i 'main(.*)'
 ```
 
 **To search in all recognized languages file**
@@ -41,16 +41,16 @@ srcgrep 'iddqd'
 ```
 
 ## Command list
-* hgrep
-* srcgrep
-* cppgrep
-* gogrep
-* javagrep
-* jsgrep
-* plgrep
-* pygrep
-* rbgrep
-* xmlgrep
+* hgrep - search in all text file
+* srcgrep - search in all programming language file
+* cppgrep - search in C and C++ file
+* gogrep - search in Go file
+* javagrep - search in Java file
+* jsgrep - search in JavaScript file
+* plgrep - search in Perl file
+* pygrep - search in Python file
+* rbgrep - search in Ruby file
+* xmlgrep - search in XML file
 
 ## Installation
 
