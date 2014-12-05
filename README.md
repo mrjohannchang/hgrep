@@ -1,11 +1,11 @@
 # hgrep
 
-The default outputs of grep isn't good enough for human.
+The default outputs of grep isn't good enough for human reading.
 hgrep prints more friendly results.
 The goal of hgrep is similar to [ack](http://beyondgrep.com/)
-but hgrep is much more compact and easier to extend.
+but with much more compact source.
 
-hgrep accepts the same arguments with traditional grep.
+hgrep accepts the same arguments and regex expression with traditional grep.
 
 ## Usage
 
@@ -18,10 +18,10 @@ E.g.
 hgrep 'hello'
 ```
 
-**To search only in specific language file**
+**To search only in specific language files**
 
 ```sh
-<language_abbreviation>grep PATTERN
+LANGUAGEgrep PATTERN
 ```
 
 E.g.
@@ -29,7 +29,7 @@ E.g.
 javagrep -i 'main(.*)'
 ```
 
-**To search in all recognized languages file**
+**To search in all recognized programming language files**
 
 ```sh
 srcgrep PATTERN
@@ -41,18 +41,30 @@ srcgrep 'iddqd'
 ```
 
 ## Command list
-* hgrep - search in all text file
-* srcgrep - search in all programming language file
-* cppgrep - search in C and C++ file
-* gogrep - search in Go file
-* javagrep - search in Java file
-* jsgrep - search in JavaScript file
-* plgrep - search in Perl file
-* pygrep - search in Python file
-* rbgrep - search in Ruby file
-* xmlgrep - search in XML file
+* hgrep - search in all text files
+* srcgrep - search in all programming language files
+* cppgrep - search in C and C++ files
+* gogrep - search in Go files
+* javagrep - search in Java files
+* jsgrep - search in JavaScript files
+* plgrep - search in Perl files
+* pygrep - search in Python files
+* rbgrep - search in Ruby files
+* xmlgrep - search in XML files
 
 ## Installation
+
+Choose one of the following methods.
+
+### From the internet
+
+Paste the below line into your terminal and enter.
+
+```sh
+tmpdir="`mktemp -d`" && cd "$tmpdir" && wget -O - https://github.com/changyuheng/hgrep/archive/master.zip > hgrep.zip && unzip hgrep.zip && cd hgrep-master && ./install.sh && cd ; rm -rf "$tmpdir" ; unset tmpdir
+```
+
+### From the source
 
 Clone the repository and enter it then execute the installing file to install
 to `${HOME}/bin`
